@@ -9,6 +9,7 @@
 
     <!-- Bootstrap! -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <!-- custom css -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -30,12 +31,19 @@
     </header>
 
     <main>
-        <!-- Word Result Text show! -->
-        <section style="display: none;" id="result-div">
-            <div style="width: 90%;margin: 19px auto;background-color: white;" class="shadow-sm" >
-                <div>
-                    <h3 id="Text-show">Write something</h3>
-                </div><br>
+        <h3 id="name-text"></h3>
+        <!-- Information of player -->
+        <section>
+            <div class="main-width shadow-sm" >
+                <div class="d-flex justify-content-between">
+                    <div style="width: 60%;" class="d-flex justify-content-between">
+                        <input id="name" style="border-radius: 0px;font-size: 22px;font-family: initial;" class="w-75 form-control" type="text" placeholder="Your Full Name">
+                        <button onclick="nameBtn()" class="strat-btn">Add Name</button>
+                    </div>
+                    <div style="width: 30%;" class="d-flex justify-content-between">
+                        <h2 class="score-st">Your Score: </h2><h2 class="score-st" id="score"></h2>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -48,11 +56,19 @@
                 </div><br>
                 <div class="d-flex justify-content-between">
                     <button onclick="start()" id="start" class="strat-btn">Start</button>
-                    <button id="Stop" class="strat-btn">Stop</button>
+                    <button id="Stop" class="strat-btn">Restart</button>
                 </div>
             </div>
         </section>
 
+        <!-- Word Result Text show! -->
+        <section style="display: none;" id="result-div">
+            <div style="width: 90%;margin: 19px auto;background-color: white;" class="shadow-sm" >
+                <div>
+                    <h3 id="Text-show">Write something</h3>
+                </div><br>
+            </div>
+        </section>
         
         <!-- Word Button -->
         <section>
