@@ -77,6 +77,7 @@ document.querySelector('.btn-div').addEventListener('click', function(e){
     });
 
 function submitBtn(){
+    document.getElementById('result-div').style.display = 'block';
     const testCorrect = typedShow.textContent;
     const sessionWord = sessionStorage.getItem('got-word');
     console.log(sessionWord);
