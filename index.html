@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Test| galib</title>
+    <link rel="shortcut icon" href="img/Mi.png" type="image/x-icon">
+
+    <!-- Bootstrap! -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="shadow-sm">
+        <div class="header-main d-flex justify-content-between">
+            <div class="logo">
+                <img src="img/word.png" alt="">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>Home</li>
+                    <li>Test</li>
+                    <li>Scoure</li>
+                    <li>About</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Word Result Text show! -->
+        <section>
+            <div style="width: 90%;margin: 19px auto;background-color: white;" class="shadow-sm" >
+                <div>
+                    <h3 id="Text-show">Welcome to word test</h3>
+                </div><br>
+            </div>
+        </section>
+
+        <!-- Word show! -->
+        <section>
+            <div class="main-width shadow-sm" >
+                <div class="word-div">
+                    <h1 id="word-show" style="color: #321463;text-align:center">Welcome to word test</h1>
+                    <h1 id="type-word" style="color: #321463;text-align:center;display: none;"></h1>
+                </div><br>
+                <div class="d-flex justify-content-between">
+                    <button onclick="start()" id="start" class="strat-btn">Start</button>
+                    <button id="Stop" class="strat-btn">Stop</button>
+                </div>
+            </div>
+        </section>
+
+        
+        <!-- Word Button -->
+        <section>
+            <div style="padding: 0% 2%;" class="main-width shadow-sm">
+                <div class="btn-div">
+                    <button id="btn-key">A</button>
+                    <button id="btn-key">B</button>
+                    <button id="btn-key">C</button>
+                    <button id="btn-key">D</button>
+                    <button id="btn-key">E</button>
+                    <button id="btn-key">F</button>
+                    <button id="btn-key">G</button>
+                    <button id="btn-key">H</button>
+                    <button id="btn-key">I</button>
+                    <button id="btn-key">J</button>
+                    <button id="btn-key">K</button>
+                    <button id="btn-key">L</button>
+                    <button id="btn-key">M</button>
+                    <button id="btn-key">N</button>
+                    <button id="btn-key">O</button>
+                    <button id="btn-key">P</button>
+                    <button id="btn-key">Q</button>
+                    <button id="btn-key">R</button>
+                    <button id="btn-key">S</button>
+                    <button id="btn-key">T</button>
+                    <button id="btn-key">U</button>
+                    <button id="btn-key">V</button>
+                    <button id="btn-key">W</button>
+                    <button id="btn-key">X</button>
+                    <button id="btn-key">Y</button>
+                    <button id="btn-key">Z</button>
+                    <button id="sub-btn">⌫</button>
+                    <button onclick="submitBtn()" id="sub-btn">Submit</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="shadow">
+        <div class="footer-div">
+            <p style="margin: 0;">© 2021-2025 John Doe All Rights Reserved by Galib</p>
+        </div>
+    </footer>
+    <!-- js! -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
