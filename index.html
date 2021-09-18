@@ -9,13 +9,14 @@
 
     <!-- Bootstrap! -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/responsive.css">
     <!-- custom css -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
 </head>
 <body>
     <header class="shadow-sm">
-        <div class="header-main d-flex justify-content-between">
+        <div class="header-main d-lg-flex justify-content-between">
             <div class="logo">
                 <img src="img/word.png" alt="">
             </div>
@@ -35,12 +36,12 @@
         <!-- Information of player -->
         <section>
             <div class="main-width shadow-sm" >
-                <div class="d-flex justify-content-between">
-                    <div style="width: 60%;" class="d-flex justify-content-between">
-                        <input id="name" style="border-radius: 0px;font-size: 22px;font-family: initial;" class="w-75 form-control" type="text" placeholder="Your Full Name">
+                <div class="d-lg-flex justify-content-between">
+                    <div class="d-flex justify-content-between div1-score">
+                        <input id="name" class="form-control" type="text" placeholder="Your Full Name">
                         <button onclick="nameBtn()" class="strat-btn">Add Name</button>
                     </div>
-                    <div style="width: 30%;" class="d-flex justify-content-between">
+                    <div class="d-flex justify-content-between div2-score">
                         <h2 class="score-st">Your Score: </h2><h2 class="score-st" id="score"></h2>
                     </div>
                 </div>

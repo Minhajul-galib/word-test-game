@@ -1,5 +1,43 @@
 @media only screen and (max-width: 430px) {
-    body {
-      background-color: rgb(61, 2, 66);
+    .menu ul li {
+        padding-left: 0px;
+    }
+    .logo {
+        margin: 0px 16px;
+    }
+    .menu ul {
+        padding: 1% 0%;
+        gap: 38px;
+    }
+    .menu {
+        text-align: center;
+    }
+    .div1-score{
+        width: 100%;
+    }
+    .div2-score {
+        width: 65%;
+        margin: 16px auto 0px;
+    }
+    .main-width {
+        width: 97%;
+    }
+    #name {
+        width: 60%;
+    }
+    .word-div {
+        width: 100%;
+    }
+    #start {
+        padding: 0px 35px;
+    }
+    #Stop {
+        padding: 9px 26px 12px;
+    }
+    .btn-div {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    #score {
+        box-shadow: none;
     }
   }
