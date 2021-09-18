@@ -2,14 +2,11 @@
     .menu ul li {
         padding-left: 0px;
     }
-    .logo {
-        margin: 0px 16px;
-    }
     .menu ul {
         padding: 1% 0%;
-        gap: 38px;
+        gap: 17px;
     }
-    .menu {
+    .menu{
         text-align: center;
     }
     .div1-score{
