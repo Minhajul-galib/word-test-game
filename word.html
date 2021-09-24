@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Test| galib</title>
+    <link rel="shortcut icon" href="img/Mi.png" type="image/x-icon">
+
+    <!-- Bootstrap! -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+<body>
+    <header class="shadow-sm">
+
+        <nav class="header-main navbar navbar-expand-lg navbar-light">
+            <div class="header-main container-fluid">
+                <div class="d-lg-flex justify-content-between logo">
+
+                        <img width="95%" src="img/word.png" alt="">
+                    
+                </div>
+              
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="menu collapse navbar-collapse" id="navbarSupportedContent">         
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Add Word</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link">Scoure</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link">About</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="add-word">
+            <div class="d-flex word-add-div main-width">
+                <input id="word-input" class="form-control" type="text" placeholder="Add New Word">
+                <button onclick="newWordAdd()" class="word-btn strat-btn">Add Word</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="shadow">
+        <div class="footer-div">
+            <p style="margin: 0;">© 2021-2025 John Doe All Rights Reserved by Galib</p>
+        </div>
+    </footer>
+    <!-- js! -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

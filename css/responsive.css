@@ -1,6 +1,29 @@
+@media only screen and (max-width: 768px){
+    .main-width {
+        width: 95%;
+    }
+    .div1-score {
+        width: 68%;
+    }
+    #name {
+        width: 70%;
+    }
+    #name-adder {
+        width: 28%;
+    }
+}
+
 @media only screen and (max-width: 430px) {
+    .header-main {
+        width: 99%;
+        margin: 0px;
+    }
     .menu ul li {
         padding-left: 0px;
+    }
+
+    .logo {
+        width: 80%;
     }
     .menu ul {
         padding: 1% 0%;
@@ -13,8 +36,13 @@
         width: 100%;
     }
     .div2-score {
-        width: 65%;
-        margin: 16px auto 0px;
+        width: 100%;
+    }
+    #name-adder {
+        width: 75%;
+    }
+    .strat-btn {
+        padding: 6px 3%;
     }
     .main-width {
         width: 97%;
@@ -38,3 +66,5 @@
         box-shadow: none;
     }
   }
+  
+

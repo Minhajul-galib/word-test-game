@@ -1,6 +1,19 @@
-.header-main{
-    width: 88%;
+.header-main {
+    width: 96%;
     margin: 0px auto;
+    padding: 2px 0px 0px;
+}
+.modal-over {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    background-color: #2b2b2b45;
+    transform: translate(0%, 0%);
+    min-height: 100%;
+}
+#content-stay{
+    width: 60%;
+    transform: translate(0%, 100%);
 }
 #name{
     border-radius: 0px;
@@ -13,6 +26,9 @@
     padding: 0 0 3%;
     color: #054e4ede;
     text-shadow: 1px 1px 0px #000000b0;
+}
+#name-adder{
+    width: 20%;
 }
 #Text-show {
     padding-top: 20px;
@@ -28,10 +44,9 @@ main {
     list-style: none;
     display: inline-flex;
     align-content: center;
-    padding: 5% 0%;
 }
 .menu ul li {
-    padding-left: 60px;
+    padding-left: 26px;
     font-size: 18px;
     font-weight: 700;
     color: #616161;
@@ -42,7 +57,6 @@ main {
 84deg, #f4ddf7, #e0def9);
     padding: 9px 3%;
     color: #5540ca;
-    margin: 3px 0px;
     font-size: 20px;
     font-weight: 700;
     box-shadow: 0px 0px 4px #717171c9;
@@ -56,7 +70,7 @@ main {
 .main-width {
     width: 90%;
     margin: 19px auto;
-    padding: 3% 2%;
+    padding: 2% 2%;
     background-color: white;
 }
 .btn-div {
@@ -82,7 +96,6 @@ main {
     color: white;
 }
 .score-st{
-    box-shadow: 0px 1px 4px #ccc;
     padding: 6px 14px;
     margin: 2px 0px;
     color: #9500FF;
@@ -98,9 +111,28 @@ main {
     padding: 20px 0px;
     text-align: center;
 }
-.div1-score{
-    width: 60%;
+.div1-score {
+    width: 100%;
+    gap: 0%;
 }
 .div2-score{
     width: 30%;
+}
+
+
+/* Add word css code !
+ */
+ .add-word {
+    min-height: 100vh;
+}
+.word-add-div{
+    width: 64%;
+    gap: 2%;
+    margin: 0px auto;
+    box-shadow: 0px 2px 4px #ccc;
+}
+#word-input {
+    border-radius: 0px;
+    font-size: 19px;
+    width: 75%;
 }
