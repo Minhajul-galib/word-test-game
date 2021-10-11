@@ -8,10 +8,24 @@ let startBtn = document.getElementById('start');
 let submitButton = document.getElementById('sub-btn');
 let name = inputName.value
 let makeWord;
+let mainDiv = document.querySelectorAll('.main-width');
+
 let words =[
 'abandon',
-'desert',
-'desert',
+'approaches',
+'merchant',
+'predicament',
+'disguised',
+'creditors',
+'conspiring',
+'disinherited',
+'bequeaths',
+'Compulsory',
+'Terminate',
+'Annoy',
+'Relinquish',
+'Criticize',
+'Fabricate',
 'abatis'
 ];
 let playerName;
@@ -88,7 +102,7 @@ document.querySelector('.btn-div').addEventListener('click', function(e){
         makeWord = removecharecter;
         typedShow.innerText = makeWord;
     }
-
+    var audio = new Audio('/img/celebration.wav');
 function submitBtn(){
  
     document.getElementById('result-div').style.display = 'block';
@@ -96,8 +110,10 @@ function submitBtn(){
     const sessionWord = sessionStorage.getItem('got-word');
     console.log(sessionWord);
     if(testCorrect === sessionWord){
-        resultText.innerText = `Congratulations🥳🥳 You got 5 marks`;
-        
+        document.body.style.backgroundImage = "url('../img/celebration.gif')";
+        console.log(mainDiv);
+        resultText.innerHTML = `Congratulations<img src="/img/happy.gif" style="width: 60px;" alt="" /><img src="/img/happy1.gif" style="width: 60px;" alt="" />You got 5 marks`;
+        audio.play();  
         const playerScore = 5;
 
         let preScore = scoreId.innerText;
@@ -124,7 +140,7 @@ function submitBtn(){
         // }, 2000);
         }
     else{
-        resultText.innerText = `Opps🥵🥵 your word is not correct`;
+        resultText.innerHTML = `Opps <img src="/img/sad.gif" style="width: 36px;" alt="" /> <img src="/img/sad.gif" style="width: 36px;" alt="" /> your word is not correct`;
         resultText.style.color = '#48C9B0'
         }
 

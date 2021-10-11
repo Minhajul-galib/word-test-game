@@ -73,6 +73,9 @@ main {
     padding: 2% 2%;
     background-color: white;
 }
+.celebration{
+    background-image: url('/img/celebration.gif');
+}
 .btn-div {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
