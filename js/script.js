@@ -102,7 +102,7 @@ document.querySelector('.btn-div').addEventListener('click', function(e){
         makeWord = removecharecter;
         typedShow.innerText = makeWord;
     }
-    var audio = new Audio('https://github.com/Minhajul-galib/word-test-game/blob/main/img/celebration.wav?raw=true');
+    var audio = new Audio('https://github.com/Minhajul-galib/word-test-game/blob/main/img/celebration.wav');
 function submitBtn(){
  
     document.getElementById('result-div').style.display = 'block';
