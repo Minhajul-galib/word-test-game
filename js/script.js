@@ -102,7 +102,7 @@ document.querySelector('.btn-div').addEventListener('click', function(e){
         makeWord = removecharecter;
         typedShow.innerText = makeWord;
     }
-    var audio = new Audio('/img/celebration.wav');
+    var audio = new Audio('https://github.com/Minhajul-galib/word-test-game/blob/main/img/celebration.wav');
 function submitBtn(){
  
     document.getElementById('result-div').style.display = 'block';
@@ -110,9 +110,9 @@ function submitBtn(){
     const sessionWord = sessionStorage.getItem('got-word');
     console.log(sessionWord);
     if(testCorrect === sessionWord){
-        document.body.style.backgroundImage = "url('../img/celebration.gif')";
+        document.body.style.backgroundImage = "url('https://raw.githubusercontent.com/Minhajul-galib/word-test-game/main/img/celebration.gif')";
         console.log(mainDiv);
-        resultText.innerHTML = `Congratulations<img src="/img/happy.gif" style="width: 60px;" alt="" /><img src="/img/happy1.gif" style="width: 60px;" alt="" />You got 5 marks`;
+        resultText.innerHTML = `Congratulations<img src="https://raw.githubusercontent.com/Minhajul-galib/word-test-game/main/img/happy.gif" style="width: 60px;" alt="" /><img src="https://raw.githubusercontent.com/Minhajul-galib/word-test-game/main/img/happy1.gif" style="width: 60px;" alt="" />You got 5 marks`;
         audio.play();  
         const playerScore = 5;
 
@@ -140,7 +140,7 @@ function submitBtn(){
         // }, 2000);
         }
     else{
-        resultText.innerHTML = `Opps <img src="/img/sad.gif" style="width: 36px;" alt="" /> <img src="/img/sad.gif" style="width: 36px;" alt="" /> your word is not correct`;
+        resultText.innerHTML = `Opps <img src="https://raw.githubusercontent.com/Minhajul-galib/word-test-game/main/img/sad.gif" style="width: 36px;" alt="" /> <img src="https://raw.githubusercontent.com/Minhajul-galib/word-test-game/main/img/sad.gif" style="width: 36px;" alt="" /> your word is not correct`;
         resultText.style.color = '#48C9B0'
         }
 
